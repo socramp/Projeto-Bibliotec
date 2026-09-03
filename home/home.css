@@ -62,13 +62,13 @@ a {
     display: flex;
     flex-direction: column;
 
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: center;
     gap: 50px;
 }
 
 .texto-banner p {
-    font-size: 1.Sem;
+    font-size: 1.5em;
     width: 50%;
 }
 
@@ -82,6 +82,8 @@ a {
 
     font-size: 1.2em;
     font-weight: 700;
+
+    text-transform: uppercase;
 }
 
 .botao:hover {
@@ -94,8 +96,236 @@ a {
     width: 35%;
 }
 
+/* Título seção */
 
+.titulo-secao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.titulo-secao h2{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
 
+.titulo-secao span{
+    display: flex;
+    width: 250px;
+    height: 4px;
+    background-color: var(--cor-destaque);
+}
 
+/* Seção beneficios */
+
+.beneficios{
+    padding: 50px 120px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 100px;
+}
+
+.beneficios-lista{
+    display: grid;
+
+    grid-template-columns: repeat(3, 20%);
+
+    gap: 10%;
+
+    justify-content: center;
+}
+
+.beneficio{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 20px 50px;
+
+    border: 1px solid var(--azul-escuro);
+
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);  /*x -> y -> blur*/
+
+    text-align: center;
+
+    /*Cria referencia de posicionamento para ícone, quando o icone for posicionado, usa esse card como referencia*/
+    /*não é interessante utilizar ja q o position precisa de coordenadas especificas para ser utilizado*/
+    position: relative;
+}
+
+.beneficio-icone img{
+    width: 50%;
+}
+
+.beneficio-icone{
+    border: 4px solid var(--cor-destaque);
+    background-color: var(--branco);
+
+    border-radius: 50%;
+
+    width: 30%;
+    height: 30%;
+
+    /*Retira o icone do fluxo normal, com o absolute ele pode ficar por cima do card*/
+    position: absolute;
+
+    /*Move o elemento pra cima, o valor negativo faz ele sair parcialmente do card*/
+    top: -15%;
+
+    /*Coloca o começo do elemento em 50% da largur do card*/
+    left: 50%;
+
+    /*Ajustamos o posicionamento do elemento, mas a borda esquerda do circulo fica no centro, não o circulo todo*/
+    transform: translateX(-50%);
+
+    display: grid;
+
+    /*place-item center: é a mesma coisa que colocar
+    align itens: center; e justify-itens: center;*/
+    place-items: center;
+}
+
+.beneficio h3{
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+.beneficio p{
+    font-size: 1em;
+    width: 80%;
+}
+
+.banner-meio{
+    height: 60vh;
+
+    background-image: url(../imgs/Banner\ centro.svg);
+    background-size: cover;
+
+    display: flex;
+    justify-content: flex-end;
+
+    margin-bottom: 50px;
+
+    padding: 0 120px;
+    color: var(--branco);
+}
+
+/* Parte que eu fiz */
+
+.top-livros {
+    place-items: center;
+}
+
+.top-livros .titulo-secao {
+    padding-bottom: 100px;
+}
+
+.livros-top {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+
+    gap: 55px;
+    justify-content: center;
+
+    padding-bottom: 100px;
+}
+
+.livros {
+    display: grid;
+
+    place-items: center;
+    text-align: center;
+}
+
+.livros img {
+    width: 200;
+    margin-bottom: 30px;
+}
+
+.livros h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    align-self: center;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--azul-escuro);
+    padding: 50px 150px;
+    padding-top: 150px;
+}
+
+footer h4 {
+    color: var(--cor-destaque);
+}
+
+footer p {
+    color: var(--branco);
+}
+
+.cima, .baixo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cima {
+    padding-bottom: 50px;
+}
+
+.baixo {
+    padding-top: 50px;
+}
+
+.esquerda {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 70px;
+    align-items: center;
+}
+
+.direita {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 70px;
+    align-items: center;
+}
+
+.icone-redes {
+    display: flex;
+
+    height: 30px;
+
+    gap: 20px;
+}
+
+footer span {
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background-color: lightgrey;
+}
+
+.baixo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape-info {
+    display: flex;
+    gap: 47px;
+}
 
