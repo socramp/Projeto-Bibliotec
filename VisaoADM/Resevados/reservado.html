@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem de Livros</title>
-    <link rel="stylesheet" href="../Listagem/listagem.css">
+    <title>Livros Reservados</title>
+    <link rel="stylesheet" href="../Resevados/reservado.css">
     <link rel="stylesheet" href="../../styles/global.css">
 
     <link rel="shortcut icon" href="../../imgs/Icone - Bibliotec.png" type="image/x-icon">
@@ -42,12 +42,12 @@
                 <span>Cadastrar Livro</span>
             </a>
 
-            <a href="#" class="item-menu ativo">
+            <a href="../Listagem/listagem.html" class="item-menu">
                 <i class="fa-solid fa-bookmark"></i>
                 <span>Listar Livros</span>
             </a>
 
-            <a href="../Resevados/reservado.html" class="item-menu">
+            <a href="#" class="item-menu ativo">
                 <i class="fa-solid fa-address-book"></i>
                 <span>Livros Reservados</span>
             </a>
@@ -62,8 +62,8 @@
 
     <main class="conteudo-listagem">
         <section class="cabecalho-paginas">
-            <h1>Listar Livros</h1>
-            <p>Gerencie e acompanhe os livros cadastrados</p>
+            <h1>Livros reservados</h1>
+            <p>Gerencie e acompanhe os livros reservados</p>
         </section>
 
         <!-- card principal -->
@@ -83,10 +83,10 @@
             <!-- cabecalho da lista -->
             <div class="cabecalho-lista">
                 <h2>Nome</h2>
-                <h2>Reservado</h2>
-                <h2>Categoria</h2>
-                <h2>Editor</h2>
-                <h2>Detalhes</h2>
+                <h2>Usuário</h2>
+                <h2>Data Reserva</h2>
+                <h2>Status</h2>
+                <h2>Retirado</h2>
             </div>
 
             <!-- livros -->
@@ -96,61 +96,49 @@
                 <!-- livro -->
                 <article class="livro">
                     <p class="nome-livro">TI para Negócios</p>
+                    <p class="usuario">João Silva</p>
+                    <p class="data-retirada">06/07/2026</p>
+                    <p class="estado-retirada">Aguardando Retirada</p>
                     <input type="checkbox">
-                    <p class="categoria-livro">TI</p>
-                    <button class="botao-acao">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </button>
-
-                    <button class="botao-acao">
-                        <i class="fa-solid fa-circle-info"></i>
-                    </button>
                 </article>
 
                 <article class="livro">
                     <p class="nome-livro">TI para Negócios</p>
+                    <p class="usuario">João Silva</p>
+                    <p class="data-retirada">06/07/2026</p>
+                    <p class="estado-retirada">Aguardando Retirada</p>
                     <input type="checkbox">
-                    <p class="categoria-livro">TI</p>
-                    <button class="botao-acao">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </button>
-
-                    <button class="botao-acao">
-                        <i class="fa-solid fa-circle-info"></i>
-                    </button>
                 </article>
 
                 <article class="livro">
                     <p class="nome-livro">TI para Negócios</p>
-                    <input type="checkbox">
-                    <p class="categoria-livro">TI</p>
-                    <button class="botao-acao">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </button>
-
-                    <button class="botao-acao">
-                        <i class="fa-solid fa-circle-info"></i>
-                    </button>
+                    <p class="usuario">João Silva</p>
+                    <p class="data-retirada">06/07/2026</p>
+                    <p class="estado-retirada retirado">Retirado</p>
+                    <input type="checkbox" checked disabled>
                 </article>
 
                 <article class="livro">
                     <p class="nome-livro">TI para Negócios</p>
+                    <p class="usuario">João Silva</p>
+                    <p class="data-retirada">06/07/2026</p>
+                    <p class="estado-retirada">Aguardando Retirada</p>
                     <input type="checkbox">
-                    <p class="categoria-livro">TI</p>
-                    <button class="botao-acao">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </button>
+                </article>
 
-                    <button class="botao-acao">
-                        <i class="fa-solid fa-circle-info"></i>
-                    </button>
+                <article class="livro">
+                    <p class="nome-livro">TI para Negócios</p>
+                    <p class="usuario">João Silva</p>
+                    <p class="data-retirada">06/07/2026</p>
+                    <p class="estado-retirada">Aguardando Retirada</p>
+                    <input type="checkbox">
                 </article>
 
             </div>
 
             <!-- rodape da listagem -->
             <div class="rodape-listagem">
-                <p class="quantidade-livros">Mostrando 4 de 4 livros</p>
+                <p class="quantidade-livros">Mostrando 5 de 5 livros</p>
 
                 <!-- paginação -->
                  <div class="paginacao">

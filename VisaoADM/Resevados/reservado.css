@@ -250,7 +250,11 @@ input[type="checkbox"]:checked::after /* pseudo-elemento */{
     font-weight: 700;
 }
 
+.estado-retirada {
+    color: rgb(255, 0, 0);
+}
 
-
-
+.retirado {
+    color: rgb(82, 175, 82);
+}
 
